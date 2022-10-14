@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+}
+
+.inputBuscar {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 98, 204);
+  color: black;
+  padding: 10px 15px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+form {
+  display: grid;
+}
+
+
+.btn-flotante {
+
+  color: #ffffff;
+  /* Color del texto */
+  border-radius: 100%;
+  /* Borde del boton */
+  /* letter-spacing: 2px; */
+  /* Espacio entre letras */
+  background-color: #0062cc;
+  /* Color de fondo */
+  padding: 18px 30px;
+  /* Relleno del boton */
+  position: fixed;
+  /* mover el boton abajo */
+  bottom: 5px;
+  right: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  /* z-index: 99; */
+  cursor: pointer;
+}
+
+
+.btn-flotante:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px);
+}
+
+
+/* 
+/* Modal */
+.ReactModalPortal>div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity .2s ease-in-out;
+  z-index: 999;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 500px;
+  outline: none;
+  padding: 10px;
+}
+
+
+/* //////////////////////////// */
+
+html {
+  /* font-size: 65.5%; */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin: 0.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #0062cc;
+}
+
+.linkMaps {
+  text-decoration: none;
+  color: white;
+}
+
+.linkvista {
+  color: black;
+}
+
+
+.contenedor {
+  /* max-width: 120rem; */
+  margin: 1.5rem auto 0 auto;
+  color: black;
+  /* background-color: red; */
+  width: 88%;
+  /* height: 10%; */
+}
+
+.varios {
+  display: grid;
+  grid-template-columns: 30% 15% 25% 20%;
+  column-gap: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.select {
+  font-size: 1.15rem;
+}
+
+.sombra {
+  -webkit-box-shadow: 10px 10px 43px 12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 43px 12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 43px 12px rgba(0, 0, 0, 0.75);
+  /* para hacer un cuadro con iluminacion en la orilla */
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 2rem;
+  /* darle un borde */
+}
+
+.centro {
+  width: min(60rem, 100%);
+  margin: auto;
+  /* padding: 1rem; */
+  border-radius: 2rem;
+}
+
+
+
+/* prueba de mediaquery */
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .varios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+ 
+
+  .contenedor {
+    width: 95%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+}
+
+/* /////////////////////////// */
+
+.titlePrincipal {
+  display: grid;
+  grid-template-columns: 0fr 1.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "back tittle tittle"
+    ". . ."
+    ". . .";
+}
+
+.back {
+  display: flex;
+}
+
+.tittle {
+  grid-area: tittle;
+}
+/* /////////////////////////// */
